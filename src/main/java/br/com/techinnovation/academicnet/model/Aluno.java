@@ -1,14 +1,20 @@
 package br.com.techinnovation.academicnet.model;
 
-import java.time.Instant;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import java.time.Instant;
+
+@NoArgsConstructor
 @AllArgsConstructor
 @Data
+@Entity
 public class Aluno {
 
+	@Id
 	private Long matricula;
 	private String nome;
 	private String telefone;
